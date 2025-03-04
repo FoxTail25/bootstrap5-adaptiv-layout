@@ -1,4 +1,3 @@
-img {
-	/* width: 100%; */
+.carousel-item>img {
 	aspect-ratio: 9/6;
 }
