@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Морковка Bootstrap 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8" />
-	<title>Морковка Bootstrap 5</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bootstrap5 adaptiv layout" />
+    <meta name="keywords" content="PetProject Bootstrap5 adaptiv layout" />
+    <meta name="author" content="Foxtail25" />
 
-	<meta name="description" content="Bootstrap5 adaptiv layout" />
-	<meta name="keywords" content="PetProject Bootstrap5 adaptiv layout" />
-	<meta name="author" content="Foxtail25" />
+    <meta property="og:title" content="Bootstrap5 adaptiv layout" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://foxtail25.github.io/" />
 
-	<meta property="og:title" content="Bootstrap5 adaptiv layout" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://foxtail25.github.io/" />
+    <link rel="stylesheet" href="style.css" />
 
-	<link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-		crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  </head>
 
-	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
-</head>
+  <body>
+    <header class="bg-white shadow-sm navbar navbar-light navbar-expand-lg">
+      <nav class="container px-4 py-3">
+        <a href="#" class="navbar-brand"> &#9733; BrendName</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          id="navbarNav"
+          class="collapse navbar-collapse justify-content-end"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<<<<<<< HEAD
     <main>
       <div
         id="carouselExampleIndicators"
@@ -128,11 +166,29 @@
       <div class="catalog mt-5">
         <h3 class="mb-5 text-center">Виды морковок</h3>
         <div class="container__catalog container">
-          <div class="row gx-4 gy-4 gy-lg-5">
+          <div class="row g-4 gy-lg-5">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="card h-100 text-center">
+                <img
+                  src="./img/carrot.jpg"
+                  alt=""
+                  class="card-img-top mx-auto h-75 w-auto"
+                />
+                <div class="card-body">
+                  <div class="card-title">Сорт морковки раз</div>
+                  <div class="card-text">Описание сорта морковки</div>
+                  <button class="btn btn-primary col-6">Подробнее</button>
+                </div>
+              </div>
+            </div>
 
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="card h-100 text-center">
-                <img src="./img/carrot.jpg" alt="" class="card-img-top mx-auto h-75 w-auto" />
+                <img
+                  src="./img/carrot.jpg"
+                  alt=""
+                  class="card-img-top mx-auto h-75 w-auto"
+                />
                 <div class="card-body">
                   <div class="card-title">Сорт морковки раз</div>
                   <div class="card-text">Описание сорта морковки</div>
@@ -142,7 +198,11 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="card h-100 text-center">
-                <img src="./img/carrot.jpg" alt="" class="card-img-top mx-auto h-75 w-auto" />
+                <img
+                  src="./img/carrot.jpg"
+                  alt=""
+                  class="card-img-top mx-auto h-75 w-auto"
+                />
                 <div class="card-body">
                   <div class="card-title">Сорт морковки раз</div>
                   <div class="card-text">Описание сорта морковки</div>
@@ -152,7 +212,11 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="card h-100 text-center">
-                <img src="./img/carrot.jpg" alt="" class="card-img-top mx-auto h-75 w-auto" />
+                <img
+                  src="./img/carrot.jpg"
+                  alt=""
+                  class="card-img-top mx-auto h-75 w-auto"
+                />
                 <div class="card-body">
                   <div class="card-title">Сорт морковки раз</div>
                   <div class="card-text">Описание сорта морковки</div>
@@ -160,19 +224,14 @@
                 </div>
               </div>
             </div>
+
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="card h-100 text-center">
-                <img src="./img/carrot.jpg" alt="" class="card-img-top mx-auto h-75 w-auto" />
-                <div class="card-body">
-                  <div class="card-title">Сорт морковки раз</div>
-                  <div class="card-text">Описание сорта морковки</div>
-                  <button class="btn btn-primary col-6">Подробнее</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4">
-              <div class="card h-100 text-center">
-                <img src="./img/carrot.jpg" alt="" class="card-img-top mx-auto h-75 w-auto" />
+                <img
+                  src="./img/carrot.jpg"
+                  alt=""
+                  class="card-img-top mx-auto h-75 w-auto"
+                />
                 <div class="card-body">
                   <div class="card-title">Сорт морковки раз</div>
                   <div class="card-text">Описание сорта морковки</div>
@@ -184,129 +243,9 @@
         </div>
       </div>
     </main>
-=======
-<body>
-	<header class="bg-white shadow-sm navbar navbar-light navbar-expand-lg">
-		<nav class="container px-4 py-3">
-			<a href="#" class="navbar-brand"> &#9733; BrendName</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div id="navbarNav" class="collapse navbar-collapse justify-content-end">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a href="#" class="nav-link active">Главная</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">О нас</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Контакты</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
->>>>>>> 2798ac2527634d01bced86499e9eff4353b6f215
 
-	<main>
-		<div id="carouselExampleIndicators" class="slide carousel slide container" data-bs-ride="carousel">
-			<!--Индикатор карусели-->
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-					aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-					aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-					aria-label="Slide 3"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-					aria-label="Slide 4"></button>
-			</div>
-			<!--Слайды-->
-			<div class="carousel-inner">
-				<div class="carousel-item active" data-bs-interval="10000">
-					<img src="./img/63a7915467a044fce2eaf5e3a027b350_ce_650x433x0x0_cropped_666x444.webp"
-						class="img-fluid rounded w-100" alt="Изображение 1" />
-					<div class="carousel-caption d-none d-md-block text-dark bg-white bg-opacity-50">
-						<h5 class="">Метка первого слайда</h5>
-						<p class="">Некоторый заполнитель для первого слайда.</p>
-					</div>
-				</div>
-				<div class="carousel-item" data-bs-interval="10000">
-					<img src="./img/istockphoto-1015995028-1024x1024.jpg" class="img-fluid rounded w-100"
-						alt="Изображение 2" />
-				</div>
-				<div class="carousel-item" data-bs-interval="10000">
-					<img src="./img/istockphoto-1428763316-1024x1024.jpg" class="img-fluid rounded w-100"
-						alt="Изображение 3" />
-				</div>
-				<div class="carousel-item" data-bs-interval="10000">
-					<img src="./img/istockphoto-480833495-1024x1024.jpg" class="img-fluid rounded w-100"
-						alt="Изображение 4" />
-					<div class="carousel-caption d-none d-md-block text-white bg-black bg-opacity-50">
-						<h5 class="">Интересный факт</h5>
-						<p class="text-danger">Морковь бывает очень вкусной!</p>
-					</div>
-				</div>
-			</div>
-			<!--Кнопки навигации-->
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Предыдущий</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Следующий</span>
-			</button>
-		</div>
-		<div class="catalog mt-5">
-			<h3 class="mb-5 text-center">Виды морковок</h3>
-			<div class="container__catalog container">
-				<div class="row">
-
-					<div class="col-12 col-md-6 col-lg-4 mb-4">
-						<div class="card h-100 text-center">
-							<img class="card-img-top mx-auto h-50 w-auto" src="./img/carrot.jpg">
-							<div class="card-body">
-								<h5>Сорт морковки раз</h5>
-								<p class="card-text">Описание сорта морковки</p>
-								<button class="btn btn-primary col-6">Подробнее</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4 col-md-6 mb-4">
-						<div class="card h-100 text-center">
-							<img class="card-img-top mx-auto h-50 w-auto" src="./img/carrot.jpg">
-							<div class="card-body">
-								<h5>Сорт морковки раз</h5>
-								<p class="card-text">Описание сорта морковки</p>
-								<button class="btn btn-primary col-6">Подробнее</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-lg-4 col-md-6 mb-4">
-						<div class="card h-100 text-center">
-							<img class="card-img-top mx-auto h-50 w-auto" src="./img/carrot.jpg">
-							<div class="card-body">
-								<h5>Сорт морковки раз</h5>
-								<p class="card-text">Описание сорта морковки</p>
-								<button class="btn btn-primary col-6">Подробнее</button>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-	</main>
-
-	<footer>
-		<div>2024 Ваша компания</div>
-	</footer>
-</body>
-
+    <footer>
+      <div>2024 Ваша компания</div>
+    </footer>
+  </body>
 </html>
